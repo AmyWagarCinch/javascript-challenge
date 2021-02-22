@@ -1,6 +1,6 @@
 // from data.js
 var tableData = data;
-
+function createTable(data){
 // YOUR CODE HERE!
 // Step 5: Use d3 to update each cell's text with
 // // weather report values (weekday, date, high, low)
@@ -15,3 +15,6 @@ data.forEach(function(ufoReport) {
           cell.text(value);
    });
  });
+}
+
+createTable(tableData);
