@@ -3,7 +3,7 @@ var tableData = data;
 var tbody = d3.select("tbody");
 
 // Select the button
-var button = d3.select("#button");
+var button = d3.select("#filter-btn");
 
 function createTable(data){
 tbody.html("");
@@ -32,7 +32,7 @@ function handleClick() {
     ///d3.event.preventDefault();
 
     //select the input element and get the raw HTML node
-    var selectedDate = d3.select("#date").node().value;
+    var selectedDate = d3.select("#datetime").node().value;
     console.log(selectedDate);
 
     let selectedData = tableData.filter(function(selectedDate){
