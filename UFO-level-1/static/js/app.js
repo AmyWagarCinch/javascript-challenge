@@ -35,10 +35,9 @@ function handleClick() {
     var selectedDate = d3.select("#datetime").node().value;
     console.log(selectedDate);
 
-    let selectedData = tableData.filter(function(selectedDate){
-        return selectedDate.datetime === selectedDate;
-
-    });
+    let selectedData = tableData
+    
+    selectedData = selectedData.filter(selectedD => selectedD.datetime === selectedDate);
     
 
     createTable(selectedData)
