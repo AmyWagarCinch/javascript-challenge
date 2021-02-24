@@ -2,6 +2,9 @@
 var tableData = data;
 var tbody = d3.select("tbody");
 
+// Select the button
+var button = d3.select("#button");
+
 function createTable(data){
 tbody.html("");
 // Step 5: Use d3 to update each cell's text with
@@ -30,7 +33,7 @@ function handleClick() {
 
     //select the input element and get the raw HTML node
     var selectedDate = d3.select("#date").node().value;
-    ///console.log(selectedDate);
+    console.log(selectedDate);
 
     let selectedData = tableData.filter(function(selectedDate){
         return selectedDate.datetime === selectedDate;
