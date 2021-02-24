@@ -61,8 +61,8 @@ data.forEach(function(ufoReport) {
   ///}
   
 // We can use the `on` function in d3 to attach an event to the handler function
-button.on("click", handleClick);
-//FormData.on("submit", runEnter);
+///button.on("click", handleClick);
+///FormData.on("submit", runEnter);
 
 
 
